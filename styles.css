@@ -1,0 +1,243 @@
+/* Reset default styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navbar */
+header {
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+ul.navbar li a {
+  display: block;
+  text-decoration: none;
+  font-size: large;
+  text-indent: 10px;
+  letter-spacing: 3px;
+  color: #000000;
+  padding: 10px;
+}
+
+/* Style the navbar icons */
+.navbar-icons {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+
+/* Style the hero section */
+.hero {
+  background-image: url('img1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 70px;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  background-color: rgba(245, 126, 126, 0.7);
+  text-align: left;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  text-align: left;
+  font-family: system-ui;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  padding-right: 60px;
+  margin-bottom: 5px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  text-align: left;
+  font-family: system-ui;
+  padding-left: 20px;
+  padding-right: 60px;
+  margin-bottom: 15px;
+}
+
+/* Style the color section */
+.color-section {
+  height: 65px;
+  display: flex;
+}
+
+.color-box {
+  flex: 1;
+  background: linear-gradient(45deg, #fe6cb0, #ff010199, #ffc801b9); /* Mix of three colors */
+}
+
+
+/* Style the option section */
+.option-section {
+  text-align: center;
+  background: linear-gradient(45deg, #fe6cb0, #ff010199, #ffc801b9); /* Mix of three colors */
+  padding: 50px 0;
+}
+
+.option-section h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+
+/* Style the option windows*/
+.option-windows {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-bottom: 50px;
+}
+
+.option-window {
+  width: 200px;
+  height: 320px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:0 40px 0 40px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.option-window h3 {
+  font-size: 20px;
+  color: #000000;
+}
+
+.rounded-image {
+  width: 164px;
+  height: 154px;
+  border-radius: 0 40px 0 0;
+}
+
+.option-description {
+  text-align: center;
+ 
+}
+
+.option-description h3 {
+  font-size: 18px;
+}
+
+.option-description p {
+  font-size: 14px;
+  color: #888888;
+}
+
+
+
+/* Style the button */
+
+.translucent-button {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  padding: 15px 45px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50px;
+  
+  transition: background-color 0.3s ease;
+}
+
+.translucent-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* ... Media queries for responsive design ... */
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for tablets and small desktop screens */
+  header {
+    padding: 5px;
+  }
+
+  ul.navbar li {
+    margin: 0 5px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero-content {
+    font-size: 24px;
+  }
+
+  .option-window {
+    width: 150px;
+    height: 150px;
+  }
+
+  .translucent-button {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjustments for mobile devices */
+  header {
+    padding: 5px;
+  }
+
+  ul.navbar li {
+    margin: 0 5px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero-content {
+    font-size: 20px;
+  }
+
+  .option-window {
+    width: 120px;
+    height: 120px;
+  }
+
+  .translucent-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
